@@ -418,6 +418,15 @@ datarange{}
 **Description:**
 filters datarange using inFunction to subselect row ranges following format of array method filter()
 
+```javascript
+// example use case
+
+var dr = Datify.datarange('ExampleNamedRange')
+
+dr.filter(row => {return row['header1'] == 'ExampleColVal'}).setBackground("blue")
+  
+// would find any rows where column header1 = 'ExampleColVal' and would set row background to be blue
+```
 
 **Parameters:**  
 *inFunction* : function following format of array method filter()  
@@ -426,4 +435,14 @@ filters datarange using inFunction to subselect row ranges following format of a
 **Returns:**
 [RangeList](https://developers.google.com/apps-script/reference/spreadsheet/range-list), if false, returns array of [ranges](https://developers.google.com/apps-script/reference/spreadsheet/range#setNote(String)) or array of [ranges](https://developers.google.com/apps-script/reference/spreadsheet/range#setNote(String))
 
+<br>
+
+## autoResizeCols()
+
+**Description:**
+auto resizes column widths to fit data
+
+
+**Returns:**
+datarange{}
 
