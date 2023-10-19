@@ -295,7 +295,7 @@ datarray{}
 places datarray object into named range on sheet and returns datarange object to further manipulate once it's on the page
 
 **Parameters:**  
-rangeName : existing named range to place data to
+rangeName : existing named range to place data to  
 doc : [spreadsheet](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet) to place to, defaults to current document
 
 **Returns:**
