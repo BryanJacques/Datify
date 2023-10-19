@@ -289,7 +289,7 @@ datarray{}
 
 <br>
 
-## place(*rangeName*,*doc*)
+## place(rangeName,doc)
 
 **Description:**
 places datarray object into named range on sheet and returns datarange object to further manipulate once it's on the page
