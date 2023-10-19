@@ -3,7 +3,7 @@ Google Apps Script library for working with tabular data in Sheets. The library 
 
 ## Datarray
 
-[datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md) function accepts two dimensional array in following format:
+[Datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md) function accepts two dimensional array in following format:
 ```
   [
     ['col 1 header','col 2 header','col 3 header]
