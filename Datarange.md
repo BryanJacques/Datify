@@ -507,3 +507,27 @@ alternates background colors of entire rows based on grouping selected
 
 **Returns:**
 datarange{}
+
+<br>
+
+## applyRowBanding(options)
+
+**Description:**
+applies [Banding](https://developers.google.com/apps-script/reference/spreadsheet/banding) to rows to alternate colors
+
+**Parameters:**  
+*options* : object with below properties:
+```javascript
+{
+  headerColor     : hex or color name for header
+  ,firstRowColor  : hex or color name for odd rows
+  ,secondRowColor : hex or color name for even rows
+  ,showHeader     : boolean, include banding on header
+  ,showFooter     : boolean, show footer
+  ,bandingTheme   : [BandingTheme](https://developers.google.com/apps-script/reference/spreadsheet/banding-theme#:~:text=An%20enumeration%20of%20banding%20themes,For%20example%2C%20SpreadsheetApp.), default SpreadsheetApp.BandingTheme.LIGHT_GREY
+}
+```
+
+
+**Returns:**
+datarange{}
