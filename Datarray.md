@@ -61,7 +61,7 @@ Inserts data into datarray
 *afterDataRow* : location to insert data, defaults to end of dataset
 
 **Returns:**
-datarray{}
+[datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md)
 
 <br>
 
@@ -102,7 +102,7 @@ Emails dataset to user(s)
 *msgOptions* : additional email options (same options found [here](https://developers.google.com/apps-script/reference/mail/mail-app#sendEmail(String,String,String,Object)))
 
 **Returns:**
-datarray{}
+[datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md)
 
 <br>
 
@@ -146,7 +146,7 @@ renames column headers
 *namePairs* : two dimensional array of col names with name to rename as : [['col1','renamedCol1'],['col2','renamedCol2']]
 
 **Returns:**
-datarray{}
+[datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md)
 
 <br>
 
@@ -179,7 +179,7 @@ Val1--|Val2|Val3
 
 
 **Returns:**
-datarray{}
+[datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md)
 
 <br>
 
@@ -209,7 +209,7 @@ Val3|Val4
 *inFunction* : function following format of array method filter() 
 
 **Returns:**
-datarray{}
+[datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md)
 
 <br>
 
@@ -222,7 +222,7 @@ iterates over rows() objects to resort datarray
 *inFunction* : function following format of array method sort() 
 
 **Returns:**
-datarray{}
+[datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md)
 
 <br>
 
@@ -235,7 +235,7 @@ selects subset of columns from datarray in order of cols selected
 *cols* : array of column names 
 
 **Returns:**
-datarray{}
+[datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md)
 
 <br>
 
@@ -248,7 +248,7 @@ selects subset of columns from datarray excluding columns in cols
 *cols* : array of column names 
 
 **Returns:**
-datarray{}
+[datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md)
 
 <br>
 
@@ -285,7 +285,8 @@ reduces number of rows in datarray to rowCount
 *rowCount* : integer of rows to limit to
 
 **Returns:**
-datarray{}
+[datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md)
+
 
 <br>
 
