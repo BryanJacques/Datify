@@ -9,7 +9,7 @@ datarange function accepts the name of a named range as input and returns an obj
 Returns range of dataset
 
 **Returns:**
-range
+[range](https://developers.google.com/apps-script/reference/spreadsheet/range)
 
 <br>
 
@@ -49,7 +49,7 @@ Returns two dimensional array of headers and all rows
 Returns datarray object of dataset
 
 **Returns:**
-datarray{}
+[datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md)
 
 <br>
 
@@ -65,4 +65,83 @@ Logs header and data to console
 **Description:**
 Logs header and data to console in semi formatted way
 
+<br>
+
+## getHeader()
+
+**Description:**
+Returns array of column headers
+
+**Returns:**
+[string]
+
+<br>
+
+## getData()
+
+**Description:**
+Returns two dimensional array of data rows
+
+**Returns:**
+[[row1],[row2]]
+
+<br>
+
+## getHeaderRange()
+
+**Description:**
+Returns range of column headers
+
+**Returns:**
+[range](https://developers.google.com/apps-script/reference/spreadsheet/range)
+
+<br>
+
+## getDataRange()
+
+**Description:**
+Returns range of data only
+
+**Returns:**
+[range](https://developers.google.com/apps-script/reference/spreadsheet/range)
+
+<br>
+
+## getNumCols()
+
+**Description:**
+Returns number of columns
+
+**Returns:**
+int
+
+<br>
+
+## getNumRows()
+
+**Description:**
+Returns number of rows
+
+**Returns:**
+int
+
+<br>
+
+## shape()
+
+**Description:**
+Returns object listing row and column count
+
+**Returns:**
+{rows : int, cols : int}
+
+<br>
+
+## getSheet()
+
+**Description:**
+Returns sheet datarange is on
+
+**Returns:**
+[sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
 
