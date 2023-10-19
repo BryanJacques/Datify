@@ -206,7 +206,7 @@ Val3|Val4
 ```
 
 **Parameters:**  
-*inFunction* : function following format of array method map() 
+*inFunction* : function following format of array method filter() 
 
 **Returns:**
 datarray{}
