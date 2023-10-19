@@ -94,7 +94,7 @@ Returns object listing row and column count
 **Description:**
 Emails dataset to user(s)
 
-**Parameters:**
+**Parameters:**  
 fileName : name of file to email  
 recipients : comma separated list of emails to send to  
 subject : subject of email  
@@ -142,7 +142,7 @@ returns object with properties corresponding to each column name, and each prope
 **Description:**
 renames column headers
 
-**Parameters:**
+**Parameters:**  
 namePairs : two dimensional array of col names with name to rename as : [['col1','renamedCol1'],['col2','renamedCol2']]
 
 **Returns:**
@@ -174,7 +174,7 @@ Val1--|Val2|Val3
 */
 ```
 
-**Parameters:**
+**Parameters:**  
 inFunction : function following format of array method map() 
 
 
@@ -205,7 +205,7 @@ Val3|Val4
 */
 ```
 
-**Parameters:**
+**Parameters:**  
 inFunction : function following format of array method map() 
 
 **Returns:**
@@ -218,7 +218,7 @@ datarray{}
 **Description:**
 iterates over rows() objects to resort datarray  
 
-**Parameters:**
+**Parameters:**  
 inFunction : function following format of array method sort() 
 
 **Returns:**
@@ -231,7 +231,7 @@ datarray{}
 **Description:**
 selects subset of columns from datarray in order of cols selected
 
-**Parameters:**
+**Parameters:**  
 cols : array of column names 
 
 **Returns:**
@@ -244,7 +244,7 @@ datarray{}
 **Description:**
 selects subset of columns from datarray excluding columns in cols
 
-**Parameters:**
+**Parameters:**  
 cols : array of column names 
 
 **Returns:**
@@ -281,7 +281,7 @@ capitalizes header names and replaces underscores with spaces, useful for renami
 **Description:**
 reduces number of rows in datarray to rowCount
 
-**Parameters:**
+**Parameters:**  
 rowCount : integer of rows to limit to
 
 **Returns:**
@@ -294,7 +294,7 @@ datarray{}
 **Description:**
 places datarray object into named range on sheet and returns datarange object to further manipulate once it's on the page
 
-**Parameters:**
+**Parameters:**  
 rangeName : existing named range to place data to
 doc : [spreadsheet](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet) to place to, defaults to current document
 
