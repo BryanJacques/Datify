@@ -3,7 +3,7 @@
 
 ## getHeader()
 
-#### Description:
+** Description:**
 Returns array of column headers
 
 #### Returns:
