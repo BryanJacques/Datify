@@ -1,7 +1,7 @@
 # Datarray
 <br>
 
-## getHeader()
+### getHeader()
 
 #### Description:
 Returns array of column headers
