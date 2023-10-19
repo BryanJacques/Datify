@@ -57,8 +57,8 @@ int
 Inserts data into datarray
 
 **Parameters:**  
-records: two dimensional array of row values to insert  
-afterDataRow : location to insert data, defaults to end of dataset
+*records*: two dimensional array of row values to insert  
+*afterDataRow* : location to insert data, defaults to end of dataset
 
 **Returns:**
 datarray{}
@@ -95,11 +95,11 @@ Returns object listing row and column count
 Emails dataset to user(s)
 
 **Parameters:**  
-fileName : name of file to email  
-recipients : comma separated list of emails to send to  
-subject : subject of email  
-body : body of email  
-msgOptions : additional email options (same options found [here](https://developers.google.com/apps-script/reference/mail/mail-app#sendEmail(String,String,String,Object)))
+*fileName* : name of file to email  
+*recipients* : comma separated list of emails to send to  
+*subject* : subject of email  
+*body* : body of email  
+*msgOptions* : additional email options (same options found [here](https://developers.google.com/apps-script/reference/mail/mail-app#sendEmail(String,String,String,Object)))
 
 **Returns:**
 datarray{}
@@ -143,7 +143,7 @@ returns object with properties corresponding to each column name, and each prope
 renames column headers
 
 **Parameters:**  
-namePairs : two dimensional array of col names with name to rename as : [['col1','renamedCol1'],['col2','renamedCol2']]
+*namePairs* : two dimensional array of col names with name to rename as : [['col1','renamedCol1'],['col2','renamedCol2']]
 
 **Returns:**
 datarray{}
@@ -175,7 +175,7 @@ Val1--|Val2|Val3
 ```
 
 **Parameters:**  
-inFunction : function following format of array method map() 
+*inFunction* : function following format of array method map() 
 
 
 **Returns:**
@@ -206,7 +206,7 @@ Val3|Val4
 ```
 
 **Parameters:**  
-inFunction : function following format of array method map() 
+*inFunction* : function following format of array method map() 
 
 **Returns:**
 datarray{}
@@ -219,7 +219,7 @@ datarray{}
 iterates over rows() objects to resort datarray  
 
 **Parameters:**  
-inFunction : function following format of array method sort() 
+*inFunction* : function following format of array method sort() 
 
 **Returns:**
 datarray{}
@@ -232,7 +232,7 @@ datarray{}
 selects subset of columns from datarray in order of cols selected
 
 **Parameters:**  
-cols : array of column names 
+*cols* : array of column names 
 
 **Returns:**
 datarray{}
@@ -245,7 +245,7 @@ datarray{}
 selects subset of columns from datarray excluding columns in cols
 
 **Parameters:**  
-cols : array of column names 
+*cols* : array of column names 
 
 **Returns:**
 datarray{}
@@ -282,7 +282,7 @@ capitalizes header names and replaces underscores with spaces, useful for renami
 reduces number of rows in datarray to rowCount
 
 **Parameters:**  
-rowCount : integer of rows to limit to
+*rowCount* : integer of rows to limit to
 
 **Returns:**
 datarray{}
@@ -295,8 +295,8 @@ datarray{}
 places datarray object into named range on sheet and returns datarange object to further manipulate once it's on the page
 
 **Parameters:**  
-rangeName : existing named range to place data to  
-doc : [spreadsheet](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet) to place to, defaults to current document
+*rangeName* : existing named range to place data to  
+*doc* : [spreadsheet](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet) to place to, defaults to current document
 
 **Returns:**
 [datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
