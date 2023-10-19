@@ -154,6 +154,7 @@ datarray{}
 
 #### Description:
 iterates over rows() objects to alter row values and create new columns if they didn't exist already. One of the most useful functions in datarray.  
+
 ```javascript
 // example use case
 
@@ -172,6 +173,36 @@ Header1|Header2|Header3
 Val1--|Val2|Val3
 */
 ```
+
+#### Parameters:
+inFunction : function following format of array method map() 
+
+```javascript
+// example use case
+
+var da = Datify.datarray([['Header1','Header2'],['Val1','Val2'],['Val3','Val4']])
+
+  da = da.filter(row => {
+    return row['Header1'] == 'Val3'
+  })
+  
+  da.prettyPrint()
+
+/* OUTPUT
+Header1|Header2
+Val3|Val4
+*/
+```
+
+#### Returns:
+datarray{}
+
+<br>
+
+## filter(inFunction)
+
+#### Description:
+filters datarray using inFunction to subselect rows following format of array method filter()
 
 #### Parameters:
 inFunction : function following format of array method map() 
