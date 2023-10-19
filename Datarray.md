@@ -6,122 +6,122 @@
 **Description:**
 Returns array of column headers
 
-#### Returns:
+**Returns:**
 [string]
 
 <br>
 
 ## all()
 
-#### Description:
+**Description:**
 Returns two dimensional array of headers and all rows
 
-#### Returns:
+**Returns:**
 [[header],[row1],[row2]]
 
 <br>
 
 ## getData()
 
-#### Description:
+**Description:**
 Returns two dimensional array of data rows
 
-#### Returns:
+**Returns:**
 [[row1],[row2]]
 
 <br>
 
 ## getNumCols()
 
-#### Description:
+**Description:**
 Returns number of columns
 
-#### Returns:
+**Returns:**
 int
 
 <br>
 
 ## getNumRows()
 
-#### Description:
+**Description:**
 Returns number of rows
 
-#### Returns:
+**Returns:**
 int
 
 <br>
 
 ## insertRecords(records, afterDataRow)
 
-#### Description:
+**Description:**
 Inserts data into datarray
 
-#### Parameters:
+**Parameters:**
 records: two dimensional array of row values to insert  
 afterDataRow : location to insert data, defaults to end of dataset
 
-#### Returns:
+**Returns:**
 datarray{}
 
 <br>
 
 ## print()
 
-#### Description:
+**Description:**
 Logs header and data to console
 
 <br>
 
 ## prettyPrint()
 
-#### Description:
+**Description:**
 Logs header and data to console in semi formatted way
 
 <br>
 
 ## shape()
 
-#### Description:
+**Description:**
 Returns object listing row and column count
 
-#### Returns:
+**Returns:**
 {rows : int, cols : int}
 
 <br>
 
 ## emailCsv(fileName, recipients, subject, body, msgOptions, archiveFolderId)
 
-#### Description:
+**Description:**
 Emails dataset to user(s)
 
-#### Parameters:
+**Parameters:**
 fileName : name of file to email  
 recipients : comma separated list of emails to send to  
 subject : subject of email  
 body : body of email  
 msgOptions : additional email options (same options found [here](https://developers.google.com/apps-script/reference/mail/mail-app#sendEmail(String,String,String,Object)))
 
-#### Returns:
+**Returns:**
 datarray{}
 
 <br>
 
 ## rows()
 
-#### Description:
+**Description:**
 returns array of row values where each row is object, and each object has properties corresponding to field names. Useful for working with data without having to get index of headers
 
-#### Returns:
+**Returns:**
 [{rowObject}]
 
 <br>
 
 ## cols()
 
-#### Description:
+**Description:**
 returns object with properties corresponding to each column name, and each property has additional methods pertaining to that column
 
-#### Returns:
+**Returns:**
 ```
 {
   fieldName :
@@ -139,20 +139,20 @@ returns object with properties corresponding to each column name, and each prope
 
 ## renameCols(namePairs)
 
-#### Description:
+**Description:**
 renames column headers
 
-#### Parameters:
+**Parameters:**
 namePairs : two dimensional array of col names with name to rename as : [['col1','renamedCol1'],['col2','renamedCol2']]
 
-#### Returns:
+**Returns:**
 datarray{}
 
 <br>
 
 ## map(inFunction)
 
-#### Description:
+**Description:**
 iterates over rows() objects to alter row values and create new columns if they didn't exist already. One of the most useful functions in datarray.  
 
 ```javascript
@@ -174,18 +174,18 @@ Val1--|Val2|Val3
 */
 ```
 
-#### Parameters:
+**Parameters:**
 inFunction : function following format of array method map() 
 
 
-#### Returns:
+**Returns:**
 datarray{}
 
 <br>
 
 ## filter(inFunction)
 
-#### Description:
+**Description:**
 filters datarray using inFunction to subselect rows following format of array method filter()
 
 ```javascript
@@ -205,100 +205,100 @@ Val3|Val4
 */
 ```
 
-#### Parameters:
+**Parameters:**
 inFunction : function following format of array method map() 
 
-#### Returns:
+**Returns:**
 datarray{}
 
 <br>
 
 ## sort(inFunction)
 
-#### Description:
+**Description:**
 iterates over rows() objects to resort datarray  
 
-#### Parameters:
+**Parameters:**
 inFunction : function following format of array method sort() 
 
-#### Returns:
+**Returns:**
 datarray{}
 
 <br>
 
 ## select(cols)
 
-#### Description:
+**Description:**
 selects subset of columns from datarray in order of cols selected
 
-#### Parameters:
+**Parameters:**
 cols : array of column names 
 
-#### Returns:
+**Returns:**
 datarray{}
 
 <br>
 
 ## except(cols)
 
-#### Description:
+**Description:**
 selects subset of columns from datarray excluding columns in cols
 
-#### Parameters:
+**Parameters:**
 cols : array of column names 
 
-#### Returns:
+**Returns:**
 datarray{}
 
 <br>
 
 ## toJson()
 
-#### Description:
+**Description:**
 returns JSON string value of entire dataset
 
-#### Returns:
+**Returns:**
 string
 
 <br>
 
 ## head()
 
-#### Description:
+**Description:**
 prints first 5 rows of dataset
 
 <br>
 
 ## properCaseHeader()
 
-#### Description:
+**Description:**
 capitalizes header names and replaces underscores with spaces, useful for renaming columns directly from database
 
 <br>
 
 ## limit(rowCount)
 
-#### Description:
+**Description:**
 reduces number of rows in datarray to rowCount
 
-#### Parameters:
+**Parameters:**
 rowCount : integer of rows to limit to
 
-#### Returns:
+**Returns:**
 datarray{}
 
 <br>
 
 ## place(rangeName,doc)
 
-#### Description:
+**Description:**
 places datarray object into named range on sheet and returns datarange object to further manipulate once it's on the page
 
-#### Parameters:
+**Parameters:**
 rangeName : existing named range to place data to
 doc : [spreadsheet](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet) to place to, defaults to current document
 
-#### Returns:
+**Returns:**
 datarange{}
 
 
