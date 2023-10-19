@@ -524,10 +524,80 @@ applies [Banding](https://developers.google.com/apps-script/reference/spreadshee
   ,secondRowColor : hex or color name for even rows
   ,showHeader     : boolean, include banding on header
   ,showFooter     : boolean, show footer
-  ,bandingTheme   : [BandingTheme](https://developers.google.com/apps-script/reference/spreadsheet/banding-theme#:~:text=An%20enumeration%20of%20banding%20themes,For%20example%2C%20SpreadsheetApp.), default SpreadsheetApp.BandingTheme.LIGHT_GREY
+  ,bandingTheme   : default SpreadsheetApp.BandingTheme.LIGHT_GREY
 }
 ```
-
+see [BandingTheme](https://developers.google.com/apps-script/reference/spreadsheet/banding-theme#:~:text=An%20enumeration%20of%20banding%20themes,For%20example%2C%20SpreadsheetApp.) for BandingTheme enum
 
 **Returns:**
 datarange{}
+
+<br>
+
+## clearRowBanding(options)
+
+**Description:**
+clears [Banding](https://developers.google.com/apps-script/reference/spreadsheet/banding) from rows
+
+**Returns:**
+datarange{}
+
+<br>
+
+## setColNotes(col,notes)
+
+**Description:**
+sets notes on entire column
+
+**Parameters:**  
+*col* : name of column to apply notes  
+*notes* : array of values to set notes as, much be same length as column
+
+**Returns:**
+datarange{}
+
+<br>
+
+## styleBody(theme,options)
+
+**Description:**
+styles body of dataset. Pick from standard theme or suplly your own options
+
+**Parameters:**  
+*theme* : curated themes, pick from the following  
+1. light grey
+2. gray contrast
+3. dark
+4. cornflower
+5. green
+6. orange
+7. white
+8. purple
+9. solarized light
+10. wizpig
+11. mario
+
+*options* : instead of using a theme you can supply the following options, examples provided:
+```javascript
+{
+  background        : '#F7141A'
+  ,fontFamily       : 'Arial'
+  ,fontSize         : 10
+  ,textColor        : '#fff7f8'
+  ,wrapStrategy     : SpreadsheetApp.WrapStrategy.WRAP
+  ,fontWeight       : 'bold'
+  ,setBorder        : true
+  ,borderTop        : true
+  ,borderLeft       : true
+  ,borderBottom     : true
+  ,borderRight      : true
+  ,borderVertical   : true
+  ,borderHorizontal : true
+  ,borderColor      : '#D77B58'
+  ,borderStyle      : SpreadsheetApp.BorderStyle.SOLID
+}
+```
+
+**Returns:**
+datarange{}
+
