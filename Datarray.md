@@ -299,7 +299,7 @@ rangeName : existing named range to place data to
 doc : [spreadsheet](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet) to place to, defaults to current document
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 
 
