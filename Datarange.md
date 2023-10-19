@@ -446,3 +446,64 @@ auto resizes column widths to fit data
 **Returns:**
 datarange{}
 
+<br>
+
+## colorCols(inputObjArray)
+
+**Description:**
+colors columns
+
+**Parameters:**  
+*inputObjArray* : array of objects with the following format:
+
+```javascript
+[
+  {
+    color : hex or color name to color cols
+    ,cols : array of column names to apply color to
+  }
+]
+```
+
+**Returns:**
+datarange{}
+
+<br>
+
+## colorColHeaders(inputObjArray)
+
+**Description:**
+colors column headers
+
+**Parameters:**  
+*inputObjArray* : array of objects with the following format:
+
+```javascript
+[
+  {
+    color : hex or color name to color cols
+    ,cols : array of column names to apply color to
+  }
+]
+```
+
+**Returns:**
+datarange{}
+
+<br>
+
+## alternateColorByGuideCols(color1,color2,guideCols,applyBorder,borderStyle,borderColor)
+
+**Description:**
+alternates background colors of entire rows based on grouping selected
+
+**Parameters:**  
+*color1* : hex or color name of first and other odd number groups  
+*color2* : hex or color name of second and other even number groups  
+*guideCols* : array of column names to determine when to alternate colors  
+*applyBorder* : boolean, true to place cell border between groups, default true  
+*borderStyle* : [BorderStyle](https://developers.google.com/apps-script/reference/spreadsheet/border-style) if applyBorder is true, default SpreadsheetApp.BorderStyle.SOLID  
+*borderColor* : hex or color name of border color  
+
+**Returns:**
+datarange{}
