@@ -145,3 +145,90 @@ Returns sheet datarange is on
 **Returns:**
 [sheet](https://developers.google.com/apps-script/reference/spreadsheet/sheet)
 
+<br>
+
+## filterize()
+
+**Description:**
+Adds [filter](https://developers.google.com/apps-script/reference/spreadsheet/filter) to datarange
+
+**Returns:**
+datarange{}
+
+<br>
+
+## unFilterize()
+
+**Description:**
+Removes [filter](https://developers.google.com/apps-script/reference/spreadsheet/filter) from datarange
+
+**Returns:**
+datarange{}
+
+<br>
+
+## cols()
+
+**Description:**
+Returns object with properties corresponding to each column name, and each property has additional methods pertaining to that column.
+
+**Returns:**
+```
+{
+  fieldName :
+    {
+      index() : returns index of column
+      ,vals() : returns array of column vals
+      ,distinct() : returns array of distinct col vals
+      ,name() : returns col name
+      ,mean() : returns average of numerical column
+      ,range() : returns range of selected column
+      ,headerRange() : returns header range of selected column
+    }
+  }
+```
+
+<br>
+
+## formatCols(formats)
+
+**Description:**
+Applies formatting to columns.
+
+**Parameters:**  
+*formats* : object with properties specified below. For each property, the value is the array of columns you want the property applied to.  
+```javascript
+  {
+    integer                 : [columns]  // sets [columns] number format to integer w/ comma
+    ,numeric2dec            : [columns]  // sets [columns] number format to numeric to 2 decimals
+    ,numeric1dec            : [columns]  // sets [columns] number format to numeric to 1 decimals
+    ,currency2dec           : [columns]  // sets [columns] number format to currency rounded to two decimals
+    ,currencyRound          : [columns]  // sets [columns] number format to currency rounded to nearest whole number
+    ,accounting2dec         : [columns]  // sets [columns] number format to accounting 2 decimals
+    ,pcntWhole              : [columns]  // sets [columns] number format to whole percent
+    ,pcnt1dec               : [columns]  // sets [columns] number format to percent with 1 decimals
+    ,pcnt2dec               : [columns]  // sets [columns] number format to percent with 2 decimals
+    ,yyyymmdd               : [columns]  // sets [columns] date format to YYYY-MM-DD
+    ,mmddyyyy               : [columns]  // sets [columns] date format to MM/DD/YYYY
+    ,datetime               : [columns]  // sets [columns] date to M/D/YYYY H:MM:SS
+    ,hhmm                   : [columns]  // sets [columns] to HH:MM format
+    ,hhmmampm               : [columns]  // sets [columns] to HH:MM am/pm format
+    ,bold                   : [columns]  // sets [columns] font weight to bold
+    ,italic                 : [columns]  // sets [columns] font style to italic
+    ,leftAlign              : [columns]  // sets [columns] horizontal alignment left
+    ,centerAlign            : [columns]  // sets [columns] horizontal alignment center
+    ,rightAlign             : [columns]  // sets [columns] horizontal alignment right
+    ,topAlign               : [columns]  // sets [columns] vertical alignment top
+    ,middleAlign            : [columns]  // sets [columns] vertical alignment middle
+    ,bottomAlign            : [columns]  // sets [columns] vertical alignment bottom
+    ,overflow               : [columns]  // sets [columns] wrap strategy to overflow
+    ,clip                   : [columns]  // sets [columns] wrap strategy to clip
+    ,wrap                   : [columns]  // sets [columns] wrap strategy to wrap
+    ,rightBorderSolid       : [columns]  // sets [columns] right border to SOLID
+    ,rightBorderSolidMedium : [columns]  // sets [columns] right border to SOLID_MEDIUM
+}
+```
+
+**Returns:**
+datarange{}
+
