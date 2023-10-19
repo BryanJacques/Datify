@@ -153,7 +153,7 @@ Returns sheet datarange is on
 Adds [filter](https://developers.google.com/apps-script/reference/spreadsheet/filter) to datarange
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -163,7 +163,7 @@ datarange{}
 Removes [filter](https://developers.google.com/apps-script/reference/spreadsheet/filter) from datarange
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -230,7 +230,7 @@ Applies formatting to columns.
 ```
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -255,7 +255,7 @@ Applies either value or percent based color gradient to columns selected
 ```
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -268,7 +268,7 @@ Sets notes on headers
 *namePairs* : two dimensional array of col names with name to rename as : [['colName1','Note1'],['colName2','Note2']]
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -285,7 +285,7 @@ Clears datarange of existing data/formatting
 *note* : boolean, clear notes, default true  
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>  
 
@@ -295,7 +295,7 @@ datarange{}
 Clears datarange of existing formatting only
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>  
 
@@ -305,7 +305,7 @@ datarange{}
 hides sheet datarange is on
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>  
 
@@ -315,7 +315,7 @@ datarange{}
 shows sheet datarange is on
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>  
 
@@ -325,7 +325,7 @@ datarange{}
 shows and activates sheet datarange is on
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>  
 
@@ -335,7 +335,7 @@ datarange{}
 freeze header row
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>  
 
@@ -345,7 +345,7 @@ datarange{}
 unfreeze header row
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>  
 
@@ -358,7 +358,7 @@ freezes sheet after specified column
 *afterCol* : name of column to freeze 
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br> 
 
@@ -368,7 +368,7 @@ datarange{}
 unfreeze sheet columns
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br> 
 
@@ -381,7 +381,7 @@ alters heigh of data rows
 *height* : height in pixels to set data rows to 
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br> 
 
@@ -396,7 +396,7 @@ sets data validation on specified column to a selection dropdown
 *allowInvalid* : boolean, determines if invalid input is allowed or not, default true  
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br> 
 
@@ -409,7 +409,7 @@ hides specified columns
 *cols* : array of column names to hide
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -444,7 +444,7 @@ auto resizes column widths to fit data
 
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -466,7 +466,7 @@ colors columns
 ```
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -488,7 +488,7 @@ colors column headers
 ```
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -506,7 +506,7 @@ alternates background colors of entire rows based on grouping selected
 *borderColor* : hex or color name of border color  
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -530,7 +530,7 @@ applies [Banding](https://developers.google.com/apps-script/reference/spreadshee
 see [BandingTheme](https://developers.google.com/apps-script/reference/spreadsheet/banding-theme#:~:text=An%20enumeration%20of%20banding%20themes,For%20example%2C%20SpreadsheetApp.) for BandingTheme enum
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -540,7 +540,7 @@ datarange{}
 clears [Banding](https://developers.google.com/apps-script/reference/spreadsheet/banding) from rows
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -554,7 +554,7 @@ sets notes on entire column
 *notes* : array of values to set notes as, much be same length as column
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -599,7 +599,7 @@ styles body of dataset. Pick from standard theme or supply your own options
 ```
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -644,7 +644,7 @@ styles headers of dataset. Pick from standard theme or supply your own options
 ```
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
 
 <br>
 
@@ -668,4 +668,4 @@ styles headers and body of dataset. Pick from standard theme
 11. mario
 
 **Returns:**
-datarange{}
+[datarange](https://github.com/BryanJacques/Datify/blob/main/Datarange.md)
