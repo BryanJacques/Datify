@@ -327,3 +327,103 @@ shows and activates sheet datarange is on
 **Returns:**
 datarange{}
 
+<br>  
+
+## freezeHeader()
+
+**Description:**
+freeze header row
+
+**Returns:**
+datarange{}
+
+<br>  
+
+## unFreezeHeader()
+
+**Description:**
+unfreeze header row
+
+**Returns:**
+datarange{}
+
+<br>  
+
+## freezeCol(afterCol)
+
+**Description:**
+freezes sheet after specified column
+
+**Parameters:**  
+*afterCol* : name of column to freeze 
+
+**Returns:**
+datarange{}
+
+<br> 
+
+## unFreezeCol()
+
+**Description:**
+unfreeze sheet columns
+
+**Returns:**
+datarange{}
+
+<br> 
+
+## resizeDataRows(height)
+
+**Description:**
+alters heigh of data rows
+
+**Parameters:**  
+*height* : height in pixels to set data rows to 
+
+**Returns:**
+datarange{}
+
+<br> 
+
+## requireValsInList(col,list,allowInvalid)
+
+**Description:**
+sets data validation on specified column to a selection dropdown
+
+**Parameters:**  
+*col* : name of column to apply data dropdown 
+*list* : array of selection options for dropdown  
+*allowInvalid* : boolean, determines if invalid input is allowed or not, default true  
+
+**Returns:**
+datarange{}
+
+<br> 
+
+## hideCols(cols)
+
+**Description:**
+hides specified columns
+
+**Parameters:**  
+*cols* : array of column names to hide
+
+**Returns:**
+datarange{}
+
+<br>
+
+## filter(inFunction, returnRangeList)
+
+**Description:**
+filters datarange using inFunction to subselect row ranges following format of array method filter()
+
+
+**Parameters:**  
+*inFunction* : function following format of array method filter() 
+*returnRangeList* : boolean, if true function returns [RangeList](https://developers.google.com/apps-script/reference/spreadsheet/range-list), if false, returns array of [ranges](https://developers.google.com/apps-script/reference/spreadsheet/range#setNote(String))
+
+**Returns:**
+[RangeList](https://developers.google.com/apps-script/reference/spreadsheet/range-list), if false, returns array of [ranges](https://developers.google.com/apps-script/reference/spreadsheet/range#setNote(String)) or array of [ranges](https://developers.google.com/apps-script/reference/spreadsheet/range#setNote(String))
+
+
