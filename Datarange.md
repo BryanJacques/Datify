@@ -561,7 +561,7 @@ datarange{}
 ## styleBody(theme,options)
 
 **Description:**
-styles body of dataset. Pick from standard theme or suplly your own options
+styles body of dataset. Pick from standard theme or supply your own options
 
 **Parameters:**  
 *theme* : curated themes, pick from the following  
@@ -601,3 +601,71 @@ styles body of dataset. Pick from standard theme or suplly your own options
 **Returns:**
 datarange{}
 
+<br>
+
+## styleHeader(theme,options)
+
+**Description:**
+styles headers of dataset. Pick from standard theme or supply your own options
+
+**Parameters:**  
+*theme* : curated themes, pick from the following  
+1. light grey
+2. gray contrast
+3. dark
+4. cornflower
+5. green
+6. orange
+7. white
+8. purple
+9. solarized light
+10. wizpig
+11. mario
+
+*options* : instead of using a theme you can supply the following options, examples provided:
+```javascript
+{
+  background        : '#F7141A'
+  ,fontFamily       : 'Arial'
+  ,fontSize         : 10
+  ,textColor        : '#fff7f8'
+  ,wrapStrategy     : SpreadsheetApp.WrapStrategy.WRAP
+  ,fontWeight       : 'bold'
+  ,setBorder        : true
+  ,borderTop        : true
+  ,borderLeft       : true
+  ,borderBottom     : true
+  ,borderRight      : true
+  ,borderVertical   : true
+  ,borderHorizontal : true
+  ,borderColor      : '#D77B58'
+  ,borderStyle      : SpreadsheetApp.BorderStyle.SOLID
+}
+```
+
+**Returns:**
+datarange{}
+
+<br>
+
+## style(theme,options)
+
+**Description:**
+styles headers and body of dataset. Pick from standard theme
+
+**Parameters:**  
+*theme* : curated themes, pick from the following  
+1. light grey
+2. gray contrast
+3. dark
+4. cornflower
+5. green
+6. orange
+7. white
+8. purple
+9. solarized light
+10. wizpig
+11. mario
+
+**Returns:**
+datarange{}
