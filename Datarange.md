@@ -232,3 +232,98 @@ Applies formatting to columns.
 **Returns:**
 datarange{}
 
+<br>
+
+## applyColorGradient(args)
+
+**Description:**
+Applies either value or percent based color gradient to columns selected
+
+**Parameters:**  
+*args* : object with properties specified below:
+```javascript
+  {
+    cols : array of column names to apply gradient to
+    ,gradientType : 'PERCENT'/'VALUE'
+    ,minColor : hex value or color name for minimum of gradient
+    ,midColor : hex value or color name for middle point of gradient
+    ,maxColor : hex value or color name for maximum of gradient
+    ,minVal : value for minimum of gradient
+    ,midVal : value for middle point of gradient
+    ,maxVal : value for maximum of gradient
+  }
+```
+
+**Returns:**
+datarange{}
+
+<br>
+
+## setHeaderNotes(notePairs)
+
+**Description:**
+Sets notes on headers
+
+**Parameters:**  
+*namePairs* : two dimensional array of col names with name to rename as : [['colName1','Note1'],['colName2','Note2']]
+
+**Returns:**
+datarange{}
+
+<br>
+
+## clear(includeHeader, content, dataValidations, format, note)
+
+**Description:**
+Clears datarange of existing data/formatting
+
+**Parameters:**  
+*includeHeader* : boolean, clear header data, default false  
+*content* : boolean, clear range content, default true  
+*dataValidations* : boolean, clear data validations, default true  
+*format* : boolean, clear formatting, default true  
+*note* : boolean, clear notes, default true  
+
+**Returns:**
+datarange{}
+
+<br>  
+
+## clearFormatting()
+
+**Description:**
+Clears datarange of existing formatting only
+
+**Returns:**
+datarange{}
+
+<br>  
+
+## hideSheet()
+
+**Description:**
+hides sheet datarange is on
+
+**Returns:**
+datarange{}
+
+<br>  
+
+## showSheet()
+
+**Description:**
+shows sheet datarange is on
+
+**Returns:**
+datarange{}
+
+<br>  
+
+## activateSheet()
+
+**Description:**
+shows and activates sheet datarange is on
+
+**Returns:**
+datarange{}
+
