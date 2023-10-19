@@ -420,7 +420,7 @@ filters datarange using inFunction to subselect row ranges following format of a
 
 
 **Parameters:**  
-*inFunction* : function following format of array method filter() 
+*inFunction* : function following format of array method filter()  
 *returnRangeList* : boolean, if true function returns [RangeList](https://developers.google.com/apps-script/reference/spreadsheet/range-list), if false, returns array of [ranges](https://developers.google.com/apps-script/reference/spreadsheet/range#setNote(String))
 
 **Returns:**
