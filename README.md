@@ -1,5 +1,5 @@
 # Datify
-Google Apps Script library for working with tabular data in Sheets. The library creates two custom classes, datarray and datarange. [Datarray]((https://github.com/BryanJacques/Datify/blob/main/Datarray.md)) is an object for working with two dimensional arrays of data ([[header1, header2],[rowVal1,rowVal2]]), and the datarange object is for working with tabular data in a named range once it has been placed into a Google sheet.
+Google Apps Script library for working with tabular data in Sheets. The library creates two custom classes, datarray and datarange. [Datarray](https://github.com/BryanJacques/Datify/blob/main/Datarray.md) is an object for working with two dimensional arrays of data ([[header1, header2],[rowVal1,rowVal2]]), and the datarange object is for working with tabular data in a named range once it has been placed into a Google sheet.
 
 ## Datarray
 
