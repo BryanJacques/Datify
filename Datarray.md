@@ -1,7 +1,7 @@
 # Datarray
 <br>
 
-### getHeader()
+## getHeader()
 
 #### Description:
 Returns array of column headers
@@ -11,7 +11,7 @@ Returns array of column headers
 
 <br>
 
-### all()
+## all()
 
 #### Description:
 Returns two dimensional array of headers and all rows
